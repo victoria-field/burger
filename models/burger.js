@@ -18,7 +18,9 @@ var tasty = {
       cb(res);
     });
   },
-  delete: function(codition, cb){
+  delete: function(condition, cb){
     orm.delete("yum", condition, cb)
   }
 };
+
+module.exports = tasty;
