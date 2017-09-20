@@ -72,7 +72,7 @@ var orm = {
 
       cb(result);
     });
-  }
+  },
   // orm.delete("yum", "id=1")
   delete: function(tableName, connditions, cb){
     var queryString= "DELETE From" + tableName + " WHERE" + condition;
