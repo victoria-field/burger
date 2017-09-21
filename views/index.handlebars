@@ -1,8 +1,8 @@
-<h1 style="text-align: center; font-size: 40px">Everyone loves burgers!</h1>
-<div class= "container" style="background-color: rgb(193, 70, 118);  width:50%; float: left; text-align: center; font-size: 20px">
+<h1 >Everyone loves burgers!</h1>
+<div class= "container" id="noteat">
 
 
-<h2 style="">Burgers that have not been eaten!</h2>
+<h2>Burgers that have not been eaten!</h2>
 
 <ol>
   {{#each yum}}
@@ -22,7 +22,7 @@
 </ol>
 </div>
 
-<div class="container" id= "eaten" style="background-color: rgb(179, 161, 146);  width:50%; float: right; text-align: center; font-size: 20px">
+<div class="container" id= "eaten">
 
 <h2>Burgers that have been eaten!</h2>
 
@@ -42,7 +42,7 @@
   {{/each}}
 </ol>
 </div>
-<div class="container" style="background-color: rgb(198, 204, 47);  width:100%; float: left; text-align: center; font-size: 20px">
+<div class="container" id="addb">
 
 
 <h2>Add a Burger</h2>
@@ -57,7 +57,8 @@
     <label for="eat">Eat?</label><br>
     <input type="radio" name="devoured" value="1" checked> Eaten!<br>
     <input type="radio" name="devoured" value="0" checked> Not Eaten<br />
+    <button type="submit">Add burger</button>
   </div>
 </div>
-  <button type="submit">Add burger</button>
+
 </form>
