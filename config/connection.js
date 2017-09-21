@@ -1,6 +1,6 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-var keys = require("../keys") || process.env.JAWSDB_URL;
+var keys = process.env.JAWSDB_URL || require("../keys");
 // var key =
 
 
