@@ -1,11 +1,12 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-var keys = require("../keys");
+var keys = require("../keys") || process.env.JAWSDB_URL;
 // var key =
 
 
+
 // keys.connection;
-var connection = mysql.createConnection(keys.db);
+var connection = mysql.createConnection(keys);
 
 // Make connection.
 connection.connect(function(err) {
